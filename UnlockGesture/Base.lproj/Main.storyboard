@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_refresh_bg" translatesAutoresizingMaskIntoConstraints="NO" id="g7j-nD-e4a" userLabel="bgView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odk-me-CNU" customClass="SubView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.78679041709999997" green="1" blue="0.2406000183" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="odk-me-CNU" secondAttribute="height" multiplier="1:1" id="SuQ-sF-u01"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="odk-me-CNU" secondAttribute="centerY" id="2W2-9c-OHr"/>
+                            <constraint firstAttribute="centerY" secondItem="g7j-nD-e4a" secondAttribute="centerY" id="60x-8v-QAM"/>
+                            <constraint firstItem="g7j-nD-e4a" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="9vd-l8-a9p"/>
+                            <constraint firstAttribute="centerX" secondItem="odk-me-CNU" secondAttribute="centerX" id="CcI-O3-cOm"/>
+                            <constraint firstItem="odk-me-CNU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="XAd-La-IJL"/>
+                            <constraint firstAttribute="centerX" secondItem="g7j-nD-e4a" secondAttribute="centerX" id="eak-gj-Ppx"/>
+                            <constraint firstItem="g7j-nD-e4a" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="p6p-F5-1bo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="subView" destination="odk-me-CNU" id="COc-xe-26f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home_refresh_bg" width="640" height="1008"/>
+    </resources>
+</document>
